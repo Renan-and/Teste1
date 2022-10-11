@@ -1,0 +1,148 @@
+body {
+    background-image: url(img/background.jpg);
+    background-size: 100vw, 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh; width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    font-family: 'PT sans', sans-serif;
+
+    }
+
+    .main-login
+    {
+        width: 50%;        height: 100%;        box-sizing: border-box;        display: flex;
+        align-items: top;        justify-content: center;        
+    }
+
+    .main-content
+    {
+        width: 50%;        box-sizing: border-box;        display: flex;        align-items: center;
+        justify-content: space-around;         flex-direction: column;
+        
+    }
+
+.card-login
+{
+    min-height: 320px;  min-width: 300px;
+    height: 50%;    width: 70%;    display: flex;    flex-direction: column;    justify-content: space-around;
+    align-items: center;    margin-top: 6vh;    padding: 1%;
+}
+
+.card-login > input
+{
+   
+    width: 22vw; height: 6vh; border: none; outline: none;
+    border-radius: 2vh; background-color: #0345b3; color: white; font-weight: 600; font-size: 100%; padding: 1%; transition: 120ms;
+
+
+}
+
+.card-login > input:hover
+{    
+    transform: scale(1.1);
+    transition: 120ms;
+    cursor: pointer;
+}
+
+.card-login > h1
+{
+    font-size: 3vw;    margin: 1px; color: #47484c;
+}
+
+form > input
+{   min-height: 40px; min-width: 250px; 
+    margin: 3%;    width: 26vw;    height: 6vh;    border: none;    outline: none; border-radius: 2vh; padding: 0% 5%; 
+    background-color: #efefee; color: #acacab; font-size: 1vw;
+
+}
+
+.card-login > p, a
+{
+    color: #47484c; font-size: 13pt;
+}
+
+
+form
+{
+    display: flex;    flex-direction: column;    align-items: center;    height: auto;    width: auto;
+}
+    #logo
+    {
+        width: 15vw;        margin-top: 3%; 
+    }
+
+    #freepik_stories-outer-space
+    {
+        width: 25vw;        margin-bottom: 2%;  position: relative; left: -10vw;
+        
+    }
+
+    .form
+    {
+        width: 85%; height: auto;
+        margin: 2vh 0vh;
+        box-sizing: border-box;
+    }
+
+
+/* <<<<<<<<<<<<<< Ajuste para dispositivos mobile >>>>>>>>>>>>>>> */ 
+
+  @media (max-width: 900px)
+{
+  body
+  
+  {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #freepik_stories-outer-space
+  {
+    display: none;
+  }
+
+  #logo
+  {
+    width: 35vw;
+    margin: 6vh 0 2vh 0;
+    
+  }
+
+.card-login > h1
+{
+    font-size: 3.5vh;
+    margin: 0.5vh;
+}
+
+.main-login
+{
+    padding: 1px;
+}
+
+.card-login
+{
+    margin-top: 1vh;
+    height: 52vh;
+}
+
+.card-login > input
+{
+    width: 60vw;
+}
+
+form > input
+{
+    font-size: 2vh
+}
+
+
+
+}
